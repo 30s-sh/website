@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/install.sh",
+      "destination": "https://30s-releases.sfo3.cdn.digitaloceanspaces.com/install.sh",
+      "permanent": false
+    }
+  ]
+}
