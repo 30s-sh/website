@@ -106,7 +106,7 @@ export function Hero() {
                     </span>
                   </div>
                   <div className="text-muted-foreground mt-1 ml-4">
-                    <p>Encrypting with bob@acme.com{"'"}s public key...</p>
+                    <p>Encrypting for alice@ac.me</p>
                     <p className="text-accent">Sent. Expires in 24h.</p>
                   </div>
                 </div>
