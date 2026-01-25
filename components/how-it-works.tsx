@@ -12,7 +12,7 @@ export function HowItWorks() {
       icon: Lock,
       title: "Envelope encryption",
       description:
-        "Secrets are encrypted with a one-time key, which is then encrypted with the recipient's public key. Only they can unlock it.",
+        "Secrets are encrypted with a random one-time key, which is then wrapped for each recipient using their public key. Only they can unlock it.",
     },
     {
       icon: ServerOff,
