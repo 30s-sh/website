@@ -16,7 +16,7 @@ export function Footer() {
           <ul className="flex flex-wrap items-center justify-center gap-2">
             <li className="text-sm"><a href="https://status.30s.sh">Status</a></li>
             <li className="text-muted-foreground">&middot;</li>
-            <li className="text-sm"><a href="https://tally.so/r/Y54xLz">Issues</a></li>
+            <li className="text-sm"><a href="https://github.com/30s-sh/30s">GitHub</a></li>
           </ul>
 
           <p className="text-xs text-muted-foreground">

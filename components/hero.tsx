@@ -58,7 +58,7 @@ export function Hero() {
             </div>
 
             <p className="text-sm text-muted-foreground">
-              Free during beta. <a className="text-white" href="https://tally.so/r/Y54xLz">Have an issue?</a>
+              Free during beta. Open source forever.
             </p>
           </div>
 
