@@ -15,10 +15,15 @@ export function Hero() {
   };
 
   return (
-    <section className="pt-32 px-6">
-      <div className="mx-auto max-w-6xl">
+    <section className="pt-32 px-6 relative overflow-hidden">
+      {/* Gradient orbs for ambient lighting */}
+      <div className="gradient-orb w-[500px] h-[500px] bg-accent/20 -top-48 left-1/2 -translate-x-1/2" />
+      <div className="gradient-orb w-[400px] h-[400px] bg-accent/15 top-1/3 -right-32" />
+      <div className="gradient-orb w-[300px] h-[300px] bg-purple-500/10 bottom-0 left-1/4" />
+
+      <div className="mx-auto max-w-6xl relative z-10">
         <div className="flex flex-col items-center text-center">
-          <div className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 mb-8">
+          <div className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 mb-8 glow-accent-subtle">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
@@ -26,7 +31,7 @@ export function Hero() {
             <span className="text-sm text-accent font-medium">Now in Beta</span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground max-w-4xl text-balance">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight max-w-4xl text-balance text-gradient">
             Encrypted handoffs in seconds
           </h1>
 
@@ -36,7 +41,7 @@ export function Hero() {
           </p>
 
           <div className="mt-10 flex flex-col items-center gap-4">
-            <div className="flex items-center gap-3 rounded-lg border border-border bg-card px-4 py-3 font-mono text-sm">
+            <div className="flex items-center gap-3 rounded-lg border border-border/50 bg-card/80 backdrop-blur-sm px-4 py-3 font-mono text-sm hover:border-accent/30 transition-colors">
               <code className="text-foreground">
                 curl -sSL https://30s.sh/install.sh | sh
               </code>
@@ -44,7 +49,7 @@ export function Hero() {
               <Button
                 variant="ghost"
                 size="icon"
-                className="h-8 w-8 text-muted-foreground hover:text-foreground"
+                className="h-8 w-8 text-muted-foreground hover:text-foreground transition-colors"
                 onClick={copyCommand}
               >
                 {copied ? (
@@ -58,17 +63,24 @@ export function Hero() {
             </div>
 
             <p className="text-sm text-muted-foreground">
-              Free during beta. Open source forever.
+              Open source and available on{" "}
+              <a
+                href="https://github.com/30s-sh/30s"
+                className="text-foreground hover:text-accent transition-colors underline underline-offset-4"
+              >
+                GitHub
+              </a>.
             </p>
           </div>
 
           <div className="mt-16 w-full max-w-3xl">
-            <div className="rounded-lg border border-border bg-card overflow-hidden shadow-2xl">
-              <div className="flex items-center gap-2 px-4 py-3 border-b border-border bg-secondary/50">
+            <div className="rounded-xl border border-accent/20 bg-card overflow-hidden shadow-2xl relative">
+              <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent pointer-events-none" />
+              <div className="flex items-center gap-2 px-4 py-3 border-b border-border/50 bg-secondary/30 relative">
                 <div className="flex gap-1.5">
-                  <div className="w-3 h-3 rounded-full bg-muted-foreground/30" />
-                  <div className="w-3 h-3 rounded-full bg-muted-foreground/30" />
-                  <div className="w-3 h-3 rounded-full bg-muted-foreground/30" />
+                  <div className="w-3 h-3 rounded-full bg-red-500/70" />
+                  <div className="w-3 h-3 rounded-full bg-yellow-500/70" />
+                  <div className="w-3 h-3 rounded-full bg-green-500/70" />
                 </div>
 
                 <span className="text-xs text-muted-foreground font-mono ml-2">
@@ -76,7 +88,7 @@ export function Hero() {
                 </span>
               </div>
 
-              <div className="p-6 font-mono text-sm text-left space-y-6">
+              <div className="p-6 font-mono text-sm text-left space-y-6 relative">
                 <div>
                   <div className="flex items-start gap-2">
                     <span className="text-accent">$</span>

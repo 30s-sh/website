@@ -29,19 +29,31 @@ export function HowItWorks() {
   ];
 
   return (
-    <section className="py-20 px-6">
+    <section className="py-20 px-6 relative">
       <div className="mx-auto max-w-4xl">
-        <div className="grid sm:grid-cols-2 gap-8">
+        <div className="text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
+            How it works
+          </h2>
+          <p className="text-muted-foreground max-w-lg mx-auto">
+            Security that doesn't get in the way
+          </p>
+        </div>
+
+        <div className="grid sm:grid-cols-2 gap-6">
           {steps.map((step) => (
-            <div key={step.title} className="flex gap-4">
+            <div
+              key={step.title}
+              className="flex gap-4 p-5 rounded-xl border border-border/50 bg-card/30 hover:border-accent/30 hover:bg-card/50 transition-all duration-300 group"
+            >
               <div className="flex-shrink-0">
-                <div className="w-10 h-10 rounded-lg bg-accent/10 border border-accent/20 flex items-center justify-center">
+                <div className="w-11 h-11 rounded-xl bg-accent/10 border border-accent/20 flex items-center justify-center group-hover:glow-accent-subtle transition-all duration-300">
                   <step.icon className="w-5 h-5 text-accent" />
                 </div>
               </div>
 
               <div>
-                <h3 className="font-semibold text-foreground mb-1">
+                <h3 className="font-semibold text-foreground mb-1.5">
                   {step.title}
                 </h3>
 
