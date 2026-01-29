@@ -37,7 +37,7 @@ export function Pricing() {
           {/* Pro Tier */}
           <div className="border border-accent/30 rounded-xl p-8 bg-gradient-to-b from-accent/10 via-card/50 to-card/30 relative glow-accent-subtle">
             <div className="absolute -top-3 left-8 bg-accent text-accent-foreground text-xs font-semibold px-3 py-1 rounded-full">
-              Founding Team
+              Founding Customers
             </div>
             <h3 className="text-xl font-semibold text-foreground mb-2">Pro</h3>
             <div className="mb-4">
@@ -54,13 +54,13 @@ export function Pricing() {
                 <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                 Unlimited sends within your domain*
               </li>
-              <li className="flex items-start gap-3 text-muted-foreground">
-                <Check className="w-5 h-5 text-muted-foreground/50 flex-shrink-0 mt-0.5" />
-                <span>Team policies (enforce TTL / one-time view / defaults) <span className="text-xs bg-emerald-500/20 text-emerald-400 px-1.5 py-0.5 rounded ml-1">Soon</span></span>
+              <li className="flex items-start gap-3">
+                <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                Team policies (enforce TTL / one-time view / defaults)
               </li>
-              <li className="flex items-start gap-3 text-muted-foreground">
-                <Check className="w-5 h-5 text-muted-foreground/50 flex-shrink-0 mt-0.5" />
-                <span>Team activity log (sent / revealed / expired) <span className="text-xs bg-emerald-500/20 text-emerald-400 px-1.5 py-0.5 rounded ml-1">Soon</span></span>
+              <li className="flex items-start gap-3">
+                <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                Team activity log (sent / revealed / expired)
               </li>
               <li className="flex items-start gap-3 text-muted-foreground">
                 <Check className="w-5 h-5 text-muted-foreground/50 flex-shrink-0 mt-0.5" />
