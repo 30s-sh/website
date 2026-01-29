@@ -73,55 +73,86 @@ export function Hero() {
             </p>
           </div>
 
-          <div className="mt-16 w-full max-w-3xl">
-            <div className="rounded-xl border border-accent/20 bg-card overflow-hidden shadow-2xl relative">
-              <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent pointer-events-none" />
-              <div className="flex items-center gap-2 px-4 py-3 border-b border-border/50 bg-secondary/30 relative">
-                <div className="flex gap-1.5">
-                  <div className="w-3 h-3 rounded-full bg-red-500/70" />
-                  <div className="w-3 h-3 rounded-full bg-yellow-500/70" />
-                  <div className="w-3 h-3 rounded-full bg-green-500/70" />
+          <div className="mt-16 w-full max-w-5xl">
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Sender terminal - Bob */}
+              <div className="rounded-xl border border-accent/20 bg-card overflow-hidden shadow-2xl relative">
+                <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent pointer-events-none" />
+                <div className="flex items-center gap-2 px-4 py-3 border-b border-border/50 bg-secondary/30 relative">
+                  <div className="flex gap-1.5">
+                    <div className="w-3 h-3 rounded-full bg-red-500/70" />
+                    <div className="w-3 h-3 rounded-full bg-yellow-500/70" />
+                    <div className="w-3 h-3 rounded-full bg-green-500/70" />
+                  </div>
+
+                  <span className="text-xs text-muted-foreground font-mono ml-2">
+                    bob@laptop
+                  </span>
                 </div>
 
-                <span className="text-xs text-muted-foreground font-mono ml-2">
-                  terminal
-                </span>
+                <div className="p-6 font-mono text-sm text-left space-y-6 relative">
+                  <div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-accent">$</span>
+                      <span className="text-foreground">30s init bob@ac.me</span>
+                    </div>
+                    <div className="text-muted-foreground mt-1 ml-4">
+                      <p>Generating keypair...</p>
+                      <p className="text-accent">Registered as bob@ac.me</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-accent">$</span>
+                      <span className="text-foreground">
+                        30s send --to alice@ac.me &quot;sk_abc123&quot;
+                      </span>
+                    </div>
+                    <div className="text-muted-foreground mt-1 ml-4">
+                      <p>Encrypting for alice@ac.me</p>
+                      <p className="text-accent">Sent. Expires in 30s.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <div className="p-6 font-mono text-sm text-left space-y-6 relative">
-                <div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-accent">$</span>
-                    <span className="text-foreground">
-                      curl -sSL https://30s.sh/install.sh | sh
-                    </span>
+              {/* Receiver terminal - Alice */}
+              <div className="rounded-xl border border-accent/20 bg-card overflow-hidden shadow-2xl relative">
+                <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent pointer-events-none" />
+                <div className="flex items-center gap-2 px-4 py-3 border-b border-border/50 bg-secondary/30 relative">
+                  <div className="flex gap-1.5">
+                    <div className="w-3 h-3 rounded-full bg-red-500/70" />
+                    <div className="w-3 h-3 rounded-full bg-yellow-500/70" />
+                    <div className="w-3 h-3 rounded-full bg-green-500/70" />
                   </div>
-                  <p className="text-muted-foreground mt-1 ml-4">
-                    Installing 30s...
-                  </p>
+
+                  <span className="text-xs text-muted-foreground font-mono ml-2">
+                    alice@desktop
+                  </span>
                 </div>
 
-                <div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-accent">$</span>
-                    <span className="text-foreground">30s init bob@ac.me</span>
+                <div className="p-6 font-mono text-sm text-left space-y-6 relative">
+                  <div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-accent">$</span>
+                      <span className="text-foreground">30s inbox</span>
+                    </div>
+                    <div className="text-muted-foreground mt-1 ml-4">
+                      <p>1 new secret from bob@ac.me</p>
+                      <p className="text-foreground/70">  d4f8e2a1  expires in 28s</p>
+                    </div>
                   </div>
-                  <div className="text-muted-foreground mt-1 ml-4">
-                    <p>Generating keypair...</p>
-                    <p className="text-accent">Registered as bob@ac.me</p>
-                  </div>
-                </div>
 
-                <div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-accent">$</span>
-                    <span className="text-foreground">
-                      30s send --to alice@ac.me "sk_abc123" 24h
-                    </span>
-                  </div>
-                  <div className="text-muted-foreground mt-1 ml-4">
-                    <p>Encrypting for alice@ac.me</p>
-                    <p className="text-accent">Sent. Expires in 24h.</p>
+                  <div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-accent">$</span>
+                      <span className="text-foreground">30s open d4f8e2a1</span>
+                    </div>
+                    <div className="text-muted-foreground mt-1 ml-4">
+                      <p>Decrypting...</p>
+                      <p className="text-accent">sk_abc123</p>
+                    </div>
                   </div>
                 </div>
               </div>
