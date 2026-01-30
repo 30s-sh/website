@@ -1,7 +1,7 @@
 import React from "react"
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
-import { init } from '@plausible-analytics/tracker'
+import { Plausible } from '@/components/plausible'
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -17,12 +17,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  init({ domain: '30s.sh' });
 
   return (
     <html lang="en">
       <body className={`font-sans antialiased`}>
         {children}
+
+        <Plausible />
       </body>
     </html>
   )
