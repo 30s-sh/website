@@ -19,14 +19,15 @@ export function Hero() {
   };
 
   return (
-    <section className="pt-32 px-6 relative overflow-hidden">
+    <section className="pt-12 px-6 relative overflow-hidden">
       {/* Gradient orbs for ambient lighting */}
       <div className="gradient-orb w-[500px] h-[500px] bg-accent/20 -top-48 left-1/2 -translate-x-1/2" />
-      <div className="gradient-orb w-[400px] h-[400px] bg-accent/15 top-1/3 -right-32" />
       <div className="gradient-orb w-[300px] h-[300px] bg-purple-500/10 bottom-0 left-1/4" />
 
       <div className="mx-auto max-w-6xl relative z-10">
         <div className="flex flex-col items-center text-center">
+          <img src="logo.png" className="mb-10 h-[200px] w-auto" />
+
           <div className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 mb-8 glow-accent-subtle">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
