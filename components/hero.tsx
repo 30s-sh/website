@@ -32,7 +32,7 @@ export function Hero() {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight max-w-4xl text-balance text-gradient">
-            Encrypted handoffs in seconds
+            Stop pasting secrets in Slack.
           </h1>
 
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl text-pretty">
