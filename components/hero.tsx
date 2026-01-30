@@ -3,12 +3,15 @@
 import { Button } from "@/components/ui/button";
 import { Copy, Check } from "lucide-react";
 import { useState } from "react";
+import { track } from "@plausible-analytics/tracker";
 
 export function Hero() {
   const [copied, setCopied] = useState(false);
 
   const copyCommand = () => {
     navigator.clipboard.writeText("curl -sSL https://30s.sh/install.sh | sh");
+
+    track("install command copied", {});
 
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);

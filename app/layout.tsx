@@ -1,6 +1,7 @@
 import React from "react"
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
+import { init } from '@plausible-analytics/tracker'
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -16,16 +17,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  init({ domain: '30s.sh' });
+
   return (
     <html lang="en">
       <body className={`font-sans antialiased`}>
         {children}
-
-        <script async src="https://plausible.io/js/pa-R2WynkJP_SZSUD4epZIV9.js"></script>
-        <script>
-          window.plausible=window.plausible||function(){(plausible.q = plausible.q || []).push(arguments)},plausible.init=plausible.init||function(i){plausible.o = i || {}};
-          plausible.init()
-        </script>
       </body>
     </html>
   )
