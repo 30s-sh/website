@@ -8,26 +8,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: '30s - Secure Secret Handoff',
-  description: 'Send secrets like a message — end-to-end encrypted and expiring by default. A CLI-first alternative to pasting tokens in Slack.',
-  generator: 'v0.app',
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
-  },
+  title: '30s - Encrypted handoffs in seconds.',
+  description: 'Send secrets like a message —  end-to-end encrypted and expiring by default. A CLI-first alternative to pasting tokens in Slack.',
 }
 
 export default function RootLayout({
