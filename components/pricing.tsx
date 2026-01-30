@@ -42,17 +42,21 @@ export function Pricing() {
             <h3 className="text-xl font-semibold text-foreground mb-2">Pro</h3>
             <div className="mb-4">
               <span className="text-4xl font-bold text-foreground">$50</span>
-              <span className="text-muted-foreground"> / month per domain</span>
+              <span className="text-muted-foreground"> / month per workspace</span>
             </div>
             <p className="text-muted-foreground mb-6">For teams that want shared access + guardrails.</p>
             <ul className="space-y-3 text-foreground/90">
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                Domain unlock (DNS-verified) — everyone on @yourcompany.com can use it
+                Unlimited domains per workspace (DNS-verified)
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                Unlimited sends within your domain*
+                Anyone with a verified domain can use it
+              </li>
+              <li className="flex items-start gap-3">
+                <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                Unlimited sends*
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
@@ -61,10 +65,6 @@ export function Pricing() {
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                 Team activity log (sent / revealed / expired)
-              </li>
-              <li className="flex items-start gap-3 text-muted-foreground">
-                <Check className="w-5 h-5 text-muted-foreground/50 flex-shrink-0 mt-0.5" />
-                <span>Domain webhooks (created / revealed / expired events) <span className="text-xs bg-emerald-500/20 text-emerald-400 px-1.5 py-0.5 rounded ml-1">Soon</span></span>
               </li>
             </ul>
             <div className="mt-6 border border-border/50 bg-background/50 rounded-lg p-4 font-mono text-sm">
