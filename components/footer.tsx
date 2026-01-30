@@ -31,6 +31,15 @@ export function Footer() {
                 GitHub
               </a>
             </li>
+            <li className="text-border">•</li>
+            <li>
+              <a
+                href="mailto:hello@30s.sh"
+                className="text-sm text-muted-foreground hover:text-accent transition-colors"
+              >
+                Support
+              </a>
+            </li>
           </ul>
 
           <p className="text-xs text-muted-foreground">
