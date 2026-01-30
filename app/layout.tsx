@@ -20,6 +20,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={`font-sans antialiased`}>
         {children}
+
+        <script async src="https://plausible.io/js/pa-R2WynkJP_SZSUD4epZIV9.js"></script>
+        <script>
+          window.plausible=window.plausible||function(){(plausible.q = plausible.q || []).push(arguments)},plausible.init=plausible.init||function(i){plausible.o = i || {}};
+          plausible.init()
+        </script>
       </body>
     </html>
   )
