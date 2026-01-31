@@ -21,14 +21,14 @@ export function Hero() {
   return (
     <section className="pt-12 px-6 relative overflow-hidden">
       {/* Gradient orbs for ambient lighting */}
-      <div className="gradient-orb w-[500px] h-[500px] bg-accent/20 -top-48 left-1/2 -translate-x-1/2" />
-      <div className="gradient-orb w-[300px] h-[300px] bg-purple-500/10 bottom-0 left-1/4" />
+      <div className="gradient-orb w-[500px] h-[500px] bg-accent/20 -top-48 left-1/2 animate-float" />
+      <div className="gradient-orb w-[300px] h-[300px] bg-purple-500/10 bottom-0 left-1/4 animate-float-alt" />
 
       <div className="mx-auto max-w-6xl relative z-10">
         <div className="flex flex-col items-center text-center">
-          <img src="logo.png" className="mb-10 h-[200px] w-auto" />
+          <img src="logo.png" className="mb-10 h-[200px] w-auto animate-fade-in-blur" />
 
-          <div className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 mb-8 glow-accent-subtle">
+          <div className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 mb-8 glow-accent-subtle animate-fade-in-up delay-200">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
@@ -36,16 +36,16 @@ export function Hero() {
             <span className="text-sm text-accent font-medium">Now in Beta</span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight max-w-4xl text-balance text-gradient">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight max-w-4xl text-balance text-gradient animate-fade-in-up delay-300">
             Stop pasting secrets in Slack.
           </h1>
 
-          <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl text-pretty">
+          <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl text-pretty animate-fade-in-up delay-400">
             End-to-end encrypted, expiring by default. The secure way to hand
             off API keys, tokens, and credentials to teammates.
           </p>
 
-          <div className="mt-10 flex flex-col items-center gap-4">
+          <div className="mt-10 flex flex-col items-center gap-4 animate-fade-in-up delay-500">
             <div className="flex items-center gap-3 rounded-lg border border-border/50 bg-card/80 backdrop-blur-sm px-4 py-3 font-mono text-sm hover:border-accent/30 transition-colors">
               <code className="text-foreground">
                 curl -sSL https://30s.sh/install.sh | sh
@@ -81,7 +81,7 @@ export function Hero() {
           <div className="mt-16 w-full max-w-5xl">
             <div className="grid md:grid-cols-2 gap-6">
               {/* Sender terminal - Bob */}
-              <div className="rounded-xl border border-accent/20 bg-card overflow-hidden shadow-2xl relative">
+              <div className="rounded-xl border border-accent/20 bg-card overflow-hidden shadow-2xl relative animate-slide-in-left delay-600">
                 <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent pointer-events-none" />
                 <div className="flex items-center gap-2 px-4 py-3 border-b border-border/50 bg-secondary/30 relative">
                   <div className="flex gap-1.5">
@@ -123,7 +123,7 @@ export function Hero() {
               </div>
 
               {/* Receiver terminal - Alice */}
-              <div className="rounded-xl border border-accent/20 bg-card overflow-hidden shadow-2xl relative">
+              <div className="rounded-xl border border-accent/20 bg-card overflow-hidden shadow-2xl relative animate-slide-in-right delay-700">
                 <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent pointer-events-none" />
                 <div className="flex items-center gap-2 px-4 py-3 border-b border-border/50 bg-secondary/30 relative">
                   <div className="flex gap-1.5">

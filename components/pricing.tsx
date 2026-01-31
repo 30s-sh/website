@@ -5,13 +5,13 @@ export function Pricing() {
     <section className="pt-6 pb-20 px-6 relative">
       <div className="mx-auto max-w-4xl">
         <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">Pricing</h2>
-          <p className="text-muted-foreground">Simple, transparent pricing for everyone</p>
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3 animate-fade-in-up">Pricing</h2>
+          <p className="text-muted-foreground animate-fade-in-up delay-100">Simple, transparent pricing for everyone</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 mb-12">
           {/* Free Tier */}
-          <div className="border border-border/50 rounded-xl p-8 bg-card/30 hover:border-border transition-colors">
+          <div className="border border-border/50 rounded-xl p-8 bg-card/30 hover:border-border transition-colors animate-fade-in-up delay-200">
             <h3 className="text-xl font-semibold text-foreground mb-2">Free</h3>
             <div className="mb-4">
               <span className="text-4xl font-bold text-foreground">$0</span>
@@ -35,7 +35,7 @@ export function Pricing() {
           </div>
 
           {/* Pro Tier */}
-          <div className="border border-accent/30 rounded-xl p-8 bg-gradient-to-b from-accent/10 via-card/50 to-card/30 relative glow-accent-subtle">
+          <div className="border border-accent/30 rounded-xl p-8 bg-gradient-to-b from-accent/10 via-card/50 to-card/30 relative glow-accent-subtle animate-fade-in-up delay-300">
             <div className="absolute -top-3 left-8 bg-accent text-accent-foreground text-xs font-semibold px-3 py-1 rounded-full">
               Founding Customers
             </div>
@@ -78,7 +78,7 @@ export function Pricing() {
           </div>
         </div>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center animate-fade-in delay-400">
           <iframe
             width="380"
             height="38"

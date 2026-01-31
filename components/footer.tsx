@@ -2,7 +2,7 @@ export function Footer() {
   return (
     <footer className="py-12 px-6 border-t border-border/50 bg-card/20">
       <div className="mx-auto max-w-6xl">
-        <div className="flex flex-col items-center gap-5 text-center">
+        <div className="flex flex-col items-center gap-5 text-center animate-fade-in">
           <ul className="flex flex-wrap items-center justify-center gap-4">
             <li>
               <a
