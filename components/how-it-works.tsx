@@ -4,36 +4,36 @@ export function HowItWorks() {
   const steps = [
     {
       icon: KeyRound,
-      title: "Your keys, your device",
+      title: "Local key generation",
       description:
-        "When you sign up, a keypair is generated locally. Your private key never leaves your machine.",
+        "Your keypair is generated on your device. Private keys never leave your machine.",
     },
     {
       icon: Lock,
       title: "Envelope encryption",
       description:
-        "Secrets are encrypted with a random one-time key, which is then wrapped for each recipient using their public key. Only they can unlock it.",
+        "Secrets are encrypted with AES-256, then wrapped per-recipient using their public key.",
     },
     {
       icon: ServerOff,
-      title: "Zero plaintext",
+      title: "Zero plaintext on server",
       description:
-        "Our server only sees ciphertext. We couldn't read your secrets even if we wanted to.",
+        "We only store ciphertext. Even with full database access, secrets remain unreadable.",
     },
     {
       icon: Timer,
-      title: "Expires by default",
+      title: "Auto-expiration",
       description:
-        "Secrets auto-delete after 24 hours (or sooner). No lingering credentials, no forgotten tokens.",
+        "Secrets delete after 30 seconds to 24 hours. No lingering credentials.",
     },
   ];
 
   return (
-    <section className="py-20 px-6 relative">
+    <section className="pt-8 pb-20 px-6 relative">
       <div className="mx-auto max-w-4xl">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3 animate-fade-in-up">
-            How it works
+            Under the hood
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto animate-fade-in-up delay-100">
             Security that doesn't get in the way

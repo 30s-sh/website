@@ -8,8 +8,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: '30s - Encrypted handoffs in seconds.',
-  description: 'Send secrets like a message — end-to-end encrypted and expiring by default. A CLI-first alternative to pasting tokens in Slack.',
+  title: "30s - Share secrets like they're secrets.",
+  description: 'End-to-end encrypted credential handoffs with full activity logging. Expiring by default, zero-knowledge, and built with compliance in mind.',
   keywords: [
     'secret sharing',
     'end-to-end encryption',
@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     'developer tools',
     'devops security',
     'ephemeral secrets',
+    'activity logging',
+    'audit trail',
+    'compliance',
   ],
   authors: [{ name: '30s' }],
   creator: '30s',
@@ -29,8 +32,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: '30s - Encrypted handoffs in seconds.',
-    description: 'Send secrets like a message — end-to-end encrypted and expiring by default. A CLI-first alternative to pasting tokens in Slack.',
+    title: "30s - Share secrets like they're secrets.",
+    description: 'End-to-end encrypted credential handoffs with full activity logging. Expiring by default, zero-knowledge, and built with compliance in mind.',
     url: 'https://30s.sh',
     siteName: '30s',
     locale: 'en_US',
@@ -40,14 +43,14 @@ export const metadata: Metadata = {
         url: '/graph.jpg',
         width: 1178,
         height: 736,
-        alt: '30s - Encrypted handoffs in seconds.',
+        alt: "30s - Share secrets like they're secrets.",
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: '30s - Encrypted handoffs in seconds.',
-    description: 'Send secrets like a message — end-to-end encrypted and expiring by default. A CLI-first alternative to pasting tokens in Slack.',
+    title: "30s - Share secrets like they're secrets.",
+    description: 'End-to-end encrypted credential handoffs with full activity logging. Expiring by default, zero-knowledge, and built with compliance in mind.',
     images: ['/graph.jpg'],
   },
   robots: {

@@ -37,12 +37,12 @@ export function Hero() {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight max-w-4xl text-balance text-gradient animate-fade-in-up delay-300">
-            Stop pasting secrets in Slack.
+            Share secrets like they're secrets.
           </h1>
 
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl text-pretty animate-fade-in-up delay-400">
-            End-to-end encrypted, expiring by default. The secure way to hand
-            off API keys, tokens, and credentials to teammates.
+            End-to-end encrypted. Expiring by default. Built with compliance in
+            mind. The credential handoff your security team will thank you for.
           </p>
 
           <div className="mt-10 flex flex-col items-center gap-4 animate-fade-in-up delay-500">
