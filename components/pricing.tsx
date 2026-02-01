@@ -31,6 +31,10 @@ export function Pricing() {
                 <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                 TTL & one-time view options
               </li>
+              <li className="flex items-start gap-3">
+                <Check className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                Webhooks for notifications (Slack, etc.)
+              </li>
             </ul>
           </div>
 
