@@ -6,6 +6,15 @@ export function Footer() {
           <ul className="flex flex-wrap items-center justify-center gap-4">
             <li>
               <a
+                href="/docs"
+                className="text-sm text-muted-foreground hover:text-accent transition-colors"
+              >
+                Docs
+              </a>
+            </li>
+            <li className="text-border">•</li>
+            <li>
+              <a
                 href="https://status.30s.sh"
                 className="text-sm text-muted-foreground hover:text-accent transition-colors"
               >
