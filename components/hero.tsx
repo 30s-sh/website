@@ -28,14 +28,6 @@ export function Hero() {
         <div className="flex flex-col items-center text-center">
           <img src="logo.png" className="mb-10 h-[200px] w-auto animate-fade-in-blur" />
 
-          <div className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 mb-8 glow-accent-subtle animate-fade-in-up delay-200">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-accent" />
-            </span>
-            <span className="text-sm text-accent font-medium">Now in Beta</span>
-          </div>
-
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight max-w-4xl text-balance text-gradient animate-fade-in-up delay-300">
             Share secrets like they're secrets.
           </h1>
