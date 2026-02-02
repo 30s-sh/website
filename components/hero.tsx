@@ -81,7 +81,12 @@ export function Hero() {
           <div className="mt-16 w-full max-w-5xl">
             <div className="grid md:grid-cols-2 gap-6">
               {/* Sender terminal - Bob */}
-              <div className="rounded-xl border border-accent/20 bg-card overflow-hidden shadow-2xl relative animate-slide-in-left delay-600">
+              <div className="flex flex-col gap-3 animate-slide-in-left delay-600">
+                <div className="flex items-center gap-2 justify-center">
+                  <span className="flex items-center justify-center w-6 h-6 rounded-full bg-accent/20 text-accent text-xs font-bold">1</span>
+                  <span className="text-sm text-muted-foreground">Sender encrypts locally & uploads ciphertext</span>
+                </div>
+              <div className="rounded-xl border border-accent/20 bg-card overflow-hidden shadow-2xl relative">
                 <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent pointer-events-none" />
                 <div className="flex items-center gap-2 px-4 py-3 border-b border-border/50 bg-secondary/30 relative">
                   <div className="flex gap-1.5">
@@ -121,9 +126,15 @@ export function Hero() {
                   </div>
                 </div>
               </div>
+              </div>
 
               {/* Receiver terminal - Alice */}
-              <div className="rounded-xl border border-accent/20 bg-card overflow-hidden shadow-2xl relative animate-slide-in-right delay-700">
+              <div className="flex flex-col gap-3 animate-slide-in-right delay-700">
+                <div className="flex items-center gap-2 justify-center">
+                  <span className="flex items-center justify-center w-6 h-6 rounded-full bg-accent/20 text-accent text-xs font-bold">2</span>
+                  <span className="text-sm text-muted-foreground">Recipient pulls & decrypts on their machine</span>
+                </div>
+              <div className="rounded-xl border border-accent/20 bg-card overflow-hidden shadow-2xl relative">
                 <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent pointer-events-none" />
                 <div className="flex items-center gap-2 px-4 py-3 border-b border-border/50 bg-secondary/30 relative">
                   <div className="flex gap-1.5">
@@ -160,6 +171,7 @@ export function Hero() {
                     </div>
                   </div>
                 </div>
+              </div>
               </div>
             </div>
           </div>
