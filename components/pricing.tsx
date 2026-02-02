@@ -45,7 +45,7 @@ export function Pricing() {
             </div>
             <h3 className="text-xl font-semibold text-foreground mb-2">Pro</h3>
             <div className="mb-4">
-              <span className="text-4xl font-bold text-foreground">$50</span>
+              <span className="text-4xl font-bold text-foreground">$10</span>
               <span className="text-muted-foreground"> / month per workspace</span>
             </div>
             <p className="text-muted-foreground mb-6">For teams that want shared access + guardrails.</p>
